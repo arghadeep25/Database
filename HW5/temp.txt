@@ -1,0 +1,24 @@
+SELECT hobby1,
+COUNT(hobby1)
+AS hobbyCount
+FROM hobbies
+GROUP BY hobby1
+ORDER BY hobbycount DESC;
+
+SELECT hobby2,
+COUNT(hobby2)
+AS hobbyCount2
+FROM hobbies
+GROUP BY hobby2
+ORDER BY hobbycount2 DESC;
+
+SELECT hobby3,
+COUNT(hobby3)
+AS hobbycount3
+FROM hobbies 
+WHERE hobby3 != ''
+GROUP BY hobby3
+ORDER BY hobbycount3 DESC;
+
+
+
